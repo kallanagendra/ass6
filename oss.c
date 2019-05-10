@@ -181,7 +181,7 @@ static int on_fault(struct proc_block * pb, const int page){
 		}
 	}
 
-	//find the least referenced frame
+	
 	struct frame * frame = &shb->frame_table[0];
 	int least_used = 0;
 	for(i=1; i < F; i++){

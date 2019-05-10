@@ -61,7 +61,7 @@ static void sim_user(){
   }
 
 	WAIT(SEM_SHARED);
-		pb->id = 0;				//this marks the block as cleared
+		pb->id = 0;				
 		shb->num_terminated++;
 		printf("[%lu:%lu] Exit\n", shb->clock.tv_sec, shb->clock.tv_nsec);
 	POST(SEM_SHARED);
