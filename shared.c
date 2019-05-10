@@ -14,10 +14,10 @@ union semun {
    struct semid_ds *buf;    /* Buffer for IPC_STAT, IPC_SET */
    unsigned short  *array;  /* Array for GETALL, SETALL */
    struct seminfo  *__buf;  /* Buffer for IPC_INFO
-							   (Linux-specific) */
+   							(Linux-specific) */
 };
 
-static int mid = -1;  //shared memory identifier
+static int mid = -1;  
 static int sid = -1;  //semaphore identifier
 static struct sembuf sb = {.sem_num=0, .sem_op=0, .sem_flg=0};
 
