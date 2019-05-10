@@ -11,4 +11,4 @@ gcc -Wall -pedantic -ggdb user.o shared.o -o user
 	./oss -v
 
 3. Description
-Program generates output in txt files - oss.txt and P[1..N].txt
+Program generates output in txt files - oss.txt and P[1..N].txt. Frame Table is represented as mentioned in the document.
